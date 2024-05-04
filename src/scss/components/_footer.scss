@@ -1,0 +1,65 @@
+.footer {
+	padding: 40rem 0 23rem 0;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include tablet-small {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	&__logo {
+		display: inline-flex;
+		gap: 8rem;
+		align-items: center;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 28rem;
+		line-height: 140%;
+		color: #ffffff;
+
+		img {
+			width: 40rem;
+			height: 40rem;
+		}
+	}
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 40rem;
+		@include tablet {
+			flex-direction: column;
+			justify-content: center;
+			margin: 40rem;
+		}
+	}
+
+	&__a {
+		font-family: 'Nunito Sans';
+		font-weight: 400;
+		font-size: 18rem;
+		line-height: 25rem;
+		color: rgba(255, 255, 255, 0.7);
+		transition: var(--transition);
+		&:hover {
+			color: #5454d4;
+		}
+
+		@include tablet {
+			color: var(--c-text-white);
+		}
+	}
+	.copyright {
+		font-weight: 400;
+		font-size: 16rem;
+		line-height: 237%;
+		letter-spacing: -0.03em;
+		text-align: right;
+		color: rgba(255, 255, 255, 0.7);
+	}
+}

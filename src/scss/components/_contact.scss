@@ -1,0 +1,34 @@
+.contact-box {
+	background: rgba(30, 30, 32, 0.5);
+}
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	gap: 20rem;
+	// align-items: center;
+	margin-top: 160rem;
+	margin-bottom: 50rem;
+	@include tablet-small {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	&__desc {
+		text-align: left;
+		max-width: 826rem;
+
+		// font-weight: 400;
+		// font-size: 60rem;
+	}
+
+	&__btn {
+		border-radius: 5rem;
+		width: 201rem;
+		height: 60rem;
+		background: #5454d4;
+		color: white;
+		margin-top: 50rem;
+		margin-bottom: 50rem;
+	}
+}

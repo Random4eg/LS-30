@@ -1,0 +1,77 @@
+html {
+	font-size: 1px;
+	scroll-behavior: smooth;
+}
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: 16rem;
+	font-family: var(--ff);
+	background: #19191b;
+	color: #fff;
+}
+
+a {
+	color: #fff;
+}
+
+.container {
+	max-width: 1240rem;
+	padding-inline: 20rem;
+	margin-inline: auto;
+	width: 100%;
+}
+
+.main {
+	padding: 20rem;
+}
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	font-family: 'Nunito Sans';
+	font-weight: 400;
+	font-size: 16rem;
+	line-height: 22rem;
+	letter-spacing: -0.500211rem;
+	color: #ffffff;
+	padding: 11rem 42rem;
+
+	&._secondary {
+		border: 1rem solid #fff;
+		border-radius: 5rem;
+	}
+}
+
+.title-lg {
+	font-family: 'Archivo Black';
+	font-weight: 400;
+	font-size: 60rem;
+	line-height: 70rem;
+	text-align: center;
+	color: #ffffff;
+
+	@include mobile {
+		font-size: 32rem;
+		line-height: 120%;
+	}
+}
+
+.title-md {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 58rem;
+	line-height: 79rem;
+	color: #ffffff;
+
+	@include mobile {
+		font-size: 28rem;
+		line-height: 120%;
+	}
+}

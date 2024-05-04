@@ -1,0 +1,38 @@
+.container {
+	.why-box {
+		display: flex;
+		margin-bottom: 50rem;
+		margin-top: 150rem;
+		align-items: center;
+		@include tablet-small {
+			flex-direction: column;
+		}
+	}
+	.why-title {
+		max-width: 588rem;
+		text-align: left;
+	}
+	// .title-lg {
+	// }
+	.why-desc {
+		font-weight: 400;
+		font-size: 21rem;
+		line-height: 186%;
+		letter-spacing: -0.03em;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	.why-img {
+		position: relative;
+	}
+	.play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 124rem;
+		@include tablet-small {
+			max-width: 40rem;
+			padding: auto; /* Убираем отступы */
+		}
+	}
+}
